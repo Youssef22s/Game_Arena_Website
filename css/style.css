@@ -1,0 +1,431 @@
+body {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+}
+
+.custom-navbar {
+  background-color: rgb(10, 15, 19) !important;
+}
+
+.navbar-brand {
+  color: RGB(202, 254, 28) !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: RGB(202, 254, 28) !important;
+  font-weight: normal;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: normal;
+}
+
+.nav-link:hover {
+  color: RGB(202, 254, 28) !important;
+}
+
+.custom-navbar i {
+  color: white !important;
+}
+
+.custom-navbar .controller {
+  color: RGB(202, 254, 28) !important;
+}
+
+.navbar .last-icons {
+  transition: color 0.3s;
+}
+
+.navbar .last-icons:hover {
+  color: RGB(202, 254, 28) !important;
+}
+
+.hero {
+  position: relative;
+  background: url("/images/hero-bg.jpg") center center/cover no-repeat;
+  overflow: hidden;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 0;
+}
+
+.hero > .row {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-family: "Days One", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  line-height: 1.2;
+  color: #f1f1f1;
+}
+
+.hero-title .gaming {
+  color: rgb(203, 254, 28);
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  object-fit: cover;
+  border: 5px solid RGB(202, 254, 28) !important;
+  border-radius: 15px;
+}
+
+.btn-primary {
+  background-color: rgb(202, 254, 28) !important;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: rgb(149, 189, 19) !important;
+  color: #000;
+}
+
+.btn-outline-light.border-btn {
+  border: 2px solid rgb(202, 254, 28);
+  color: rgb(202, 254, 28);
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.btn-outline-light.border-btn:hover {
+  background-color: rgb(202, 254, 28);
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.bg-deep-dark {
+  background-color: RGB(10, 15, 19) !important;
+}
+
+.slider {
+  background-color: black;
+}
+
+.title {
+  color: rgb(202, 254, 28);
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.slider-btn {
+  background-color: transparent;
+  width: 45px;
+  height: 45px;
+  border: 2px solid RGB(54, 65, 83);
+}
+
+.slider-btn i {
+  color: RGB(153, 161, 175);
+}
+
+.game {
+  position: relative;
+  transition: all 0.1s ease-in-out;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.game::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(202, 254, 28, 0.9) 0%,
+    rgba(202, 254, 28, 0.3) 40%,
+    rgba(202, 254, 28, 0) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+.game:hover::after {
+  opacity: 1;
+}
+
+.game:hover {
+  border: 2px solid rgb(202, 254, 28);
+}
+
+.badge-animate,
+.badge-animate2 {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.name-animate {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+
+.position-relative:hover .badge-animate,
+.position-relative:hover .badge-animate2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.position-relative:hover .name-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-inner i {
+  color: rgb(202, 254, 28);
+}
+
+.WHAT-WE-DO span {
+  color: rgb(203, 254, 28);
+}
+
+.WHAT-WE-DO .card-custom {
+  background-color: RGB(26, 26, 26);
+  border: solid 1px RGB(30, 41, 56);
+  transition: all 0.3s ease;
+}
+
+.WHAT-WE-DO i {
+  color: rgb(203, 254, 28);
+}
+
+.card-custom {
+  position: relative;
+  background-color: rgb(26, 26, 26);
+  border: 1px solid #c6f000;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card-custom:hover {
+  border-color: rgb(202, 254, 28);
+}
+
+.card-custom::before,
+.card-custom::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.card-custom::before {
+  top: 0;
+  left: 0;
+  border-width: 40px 40px 0 0;
+  border-color: #c6f000 transparent transparent transparent;
+}
+
+.card-custom::after {
+  bottom: 0;
+  right: 0;
+  border-width: 0 0 40px 40px;
+  border-color: transparent transparent #c6f000 transparent;
+}
+
+.card-custom:hover::before,
+.card-custom:hover::after {
+  margin: 15px;
+  opacity: 1;
+}
+
+
+.icon-box {
+  background-color: RGB(30, 41, 56) !important;
+}
+
+.icon-box {
+  transition: background-color 0.3s ease;
+}
+
+.icon-box i {
+  transition: color 0.3s ease;
+}
+
+.card-custom:hover .icon-box {
+  background-color: rgb(203, 254, 28) !important;
+}
+
+.card-custom:hover .icon-box i {
+  color: #000;
+}
+
+.logos {
+  height: 100px;
+  background: radial-gradient(
+    circle,
+    rgb(202, 254, 28) 0%,
+    rgba(11, 14, 19, 0) 100%
+  );
+  filter: blur(60px);
+  z-index: 0;
+}
+
+.logos-track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scroll-left 25s linear infinite;
+}
+
+.logos-track.reverse {
+  animation: scroll-right 25s linear infinite;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .logos-track img {
+    width: 90px !important;
+    height: 90px !important;
+  }
+}
+
+.team-card {
+  height: 350px;
+  transition: filter 0.4s ease;
+  filter: grayscale(100%) brightness(0.9);
+}
+.team-card:hover {
+  filter: grayscale(0%) brightness(1.2) saturate(1.3);
+}
+
+.team-card:hover h5 {
+  color: rgb(203, 254, 28) !important;
+}
+
+.vertical-name {
+  writing-mode: vertical-rl;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.team-card:hover .vertical-name {
+  color: rgb(203, 254, 28);
+  opacity: 1;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+
+.bg-dark {
+  background-color: RGB(14, 19, 31) !important;
+}
+.contact-card {
+  height: 120px;
+  background-color: RGB(30, 41, 56) !important;
+}
+
+.contact-card-right {
+  background-color: RGB(30, 41, 56) !important;
+}
+
+.contact-card-right .form-control {
+  background-color: rgb(54, 65, 83);
+  border: 0.5px solid RGB(148, 153, 163);
+  height: 50px;
+  border-radius: 0.5rem;
+  padding: 0 10px;
+}
+
+.contact-card-right textarea {
+  background-color: rgb(54, 65, 83);
+  border: 0.5px solid RGB(148, 153, 163);
+  border-radius: 0.5rem;
+  padding: 0 10px;
+  height: 150px !important;
+}
+
+.contact-card-right select {
+  background-color: rgb(54, 65, 83);
+  border: 0.5px solid RGB(148, 153, 163);
+  border-radius: 0.5rem;
+  padding: 0 10px;
+  color: white;
+  height: 50px;
+}
+
+.contact-card-right input::placeholder {
+  color: RGB(148, 153, 163);
+}
+
+.contact-card-right textarea::placeholder {
+  padding-top: 5px;
+  color: RGB(148, 153, 163);
+}
+
+.contact-card-right input:focus,
+.contact-card-right textarea:focus,
+.contact-card-right select:focus {
+  border: 2px solid #d4ff00;
+}
+
+.social {
+  transition: background-color 0.2s ease, opacity 0.2s ease; 
+}
+
+.social:hover {
+  background-color: rgba(34, 41, 0, 0.9) !important;
+}
+
+.bg-lime-400 {
+  background: linear-gradient(135deg, #d4ff00, RGB(56, 226, 111));
+}
+.bg-lime-401 {
+  background: #d4ff00;
+}
+.btn-lime {
+  background-color: #d4ff00;
+  color: #000;
+  height: 60px;
+}
+.btn-lime:hover {
+  background-color: #c6f000;
+  color: #000;
+}
+
+footer i:hover, a:hover {
+  color: RGB(202, 254, 28) !important; 
+}
